@@ -28,6 +28,5 @@ if [[ "$*" = *"/opt/bitnami/scripts/postgresql-repmgr/run.sh"* ]]; then
     touch "$POSTGRESQL_TMP_DIR"/.initialized
     info "** PostgreSQL with Replication Manager setup finished! **"
 fi
-
 echo ""
 exec "$@"

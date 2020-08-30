@@ -31,8 +31,6 @@ ENV BITNAMI_APP_NAME="postgresql-repmgr" \
     PATH="/opt/bitnami/postgresql/bin:/opt/bitnami/repmgr/bin:/opt/bitnami/common/bin:$PATH"
 
 COPY dbexport.pgsql /
-RUN psql -U postgres -d secandsys -h localhost < /dbexport.pgsql
-
 EXPOSE 5432
 
 USER 1001

@@ -30,7 +30,7 @@ ENV BITNAMI_APP_NAME="postgresql-repmgr" \
     NSS_WRAPPER_LIB="/opt/bitnami/common/lib/libnss_wrapper.so" \
     PATH="/opt/bitnami/postgresql/bin:/opt/bitnami/repmgr/bin:/opt/bitnami/common/bin:$PATH"
 
-COPY *.sql /docker-entrypoint-initdb.d/
+COPY secandsys.sql /docker-entrypoint-initdb.d/
 
 EXPOSE 5432
 

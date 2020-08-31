@@ -34,5 +34,3 @@ repmgr_generate_repmgr_config
 # Initialize PostgreSQL & repmgr
 repmgr_initialize
 
-#Imports default secandsys database:
-psql -U secandsys secandsys < /dbexport.pgsql
